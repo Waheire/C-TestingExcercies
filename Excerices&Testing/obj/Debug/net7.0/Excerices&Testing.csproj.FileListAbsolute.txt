@@ -1,0 +1,14 @@
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\bin\Debug\net7.0\Excerices&Testing.exe
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\bin\Debug\net7.0\Excerices&Testing.deps.json
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\bin\Debug\net7.0\Excerices&Testing.runtimeconfig.json
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\bin\Debug\net7.0\Excerices&Testing.dll
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\bin\Debug\net7.0\Excerices&Testing.pdb
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.AssemblyInfoInputs.cache
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.AssemblyInfo.cs
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.csproj.CoreCompileInputs.cache
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.dll
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\refint\Excerices&Testing.dll
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.pdb
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\Excerices&Testing.genruntimeconfig.cache
+C:\Projects\Cohort Exercises\Excerices&Testing\Excerices&Testing\obj\Debug\net7.0\ref\Excerices&Testing.dll

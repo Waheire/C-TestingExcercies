@@ -103,3 +103,4 @@ C:\Projects\Cohort Exercises\Excerices&Testing\ExercisesTesting\obj\Debug\net7.0
 C:\Projects\Cohort Exercises\Excerices&Testing\ExercisesTesting\obj\Debug\net7.0\ExercisesTesting.pdb
 C:\Projects\Cohort Exercises\Excerices&Testing\ExercisesTesting\obj\Debug\net7.0\ExercisesTesting.genruntimeconfig.cache
 C:\Projects\Cohort Exercises\Excerices&Testing\ExercisesTesting\obj\Debug\net7.0\ref\ExercisesTesting.dll
+C:\Projects\Cohort Exercises\Excerices&Testing\ExercisesTesting\obj\Debug\net7.0\ExercisesTesting.sourcelink.json

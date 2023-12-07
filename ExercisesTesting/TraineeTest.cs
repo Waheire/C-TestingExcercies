@@ -1,4 +1,5 @@
 ﻿using Excerices_Testing;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,11 @@ namespace ExercisesTesting
     {
         private Trainee trainee;
         [SetUp]
-        public void setup() 
+        public void setup()
         {
             trainee = new Trainee();
         }
-      
-
+     
         [Test]
         [TestCase("")]
         [TestCase("     ")]
@@ -27,12 +27,23 @@ namespace ExercisesTesting
             Assert.That(() => trainee.addStudent(fullName), Throws.TypeOf<ArgumentNullException>());
         }
 
+    
         [Test]
         [TestCase("Christopher Nolan")]
-        public void AddStudent_AddStudentToList_ShouldAddStudent(string fullName)
+        public void AddStudent_WhenNameEnteredDoesNotExistInList_ShouldAddStudentName(string fullName)
         {
             trainee.addStudent(fullName);
-            Assert.That(trainee._studentList, Is.EquivalentTo(new List<string>() { fullName }));
+            trainee.SearchStudent(fullName);
+            trainee.removeStudent(fullName);
+            Assert.That(trainee._studentList, Is.Empty);
+        }
+
+        [Test]
+        [TestCase("Christopher Nolan")]
+        public void AddStudent_WhenNameEnteredDoesExistInList_ShouldThrowError(string fullName)
+        {
+            trainee.addStudent(fullName);
+            Assert.Throws<InvalidOperationException>(() => trainee.addStudent(fullName));
         }
 
         [Test]
@@ -44,15 +55,19 @@ namespace ExercisesTesting
             Assert.That(() => trainee.removeStudent(fullName), Throws.TypeOf<ArgumentNullException>());
         }
 
-        //[Test]
-        //[TestCase("Christopher Nolan")]
-        
-        //public void removeStudent_RemoveEnteredStudentNameFromList_ShouldRemoveStudentFromList(string fullName)
-        //{
-        //    trainee.removeStudent(fullName);
-        //    Assert.That(trainee._studentList, Is.EquivalentTo(new List<string>() { fullName }));
-        //}
+        [Test]
+        [TestCase("Obama Barack")]
+        public void removeStudent_WhenEnteredStudentNameDoesNotExists_ShouldThrowError(string fullName)
+        {
+            Assert.Throws<InvalidOperationException>(() => trainee.removeStudent(fullName));
+        }
 
+        //[Test]
+        //[TestCase("Obama Barack")]
+        //public void removeStudent_WhenEnteredNameExists_ShouldRemoveNameFromList(string fullName)
+        //{
+        //    Assert.That(() => trainee.removeStudent(fullName), Is.EquivalentTo(new List<string>() { fullName }));
+        //}
 
         [Test]
         [TestCase("")]
@@ -64,12 +79,19 @@ namespace ExercisesTesting
         }
 
         //[Test]
-        //[TestCase("Christopher Nolan")]
-        //public void SearchStudent_SearchEnteredStudentNameFromList_ShouldShowStudentNameFromList(string fullName)
+        //[TestCase("Ruth Waheire", "Ruth Waheire")]
+        //public void SearchStudent_WhenEnteredNameDoesExist_ShouldReturnStudentName(string fullName, string output)
         //{
-        //    trainee.SearchStudent(fullName);
-        //    Assert.That(trainee._studentList, Is.EquivalentTo(new List<string>() { fullName }));
+        //    var result = trainee.SearchStudent(fullName);
+        //    Assert.That(result, Is.EquivalentTo(output));
         //}
+
+        [Test]
+        [TestCase("Ruth Waheire")]
+        public void SearchStudent_WhenEnteredNameDoesNotExis_ShouldReturnEmpty(string fullName)
+        {
+            Assert.That(() => trainee.SearchStudent(fullName), Is.Empty);
+        }
 
       
 
